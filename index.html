@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo2.0</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+  <div class='container'>
+    <div class='sidebar'>
+      <div class='task-topBar'>
+        <div>
+          <input type='text' placeholder='Add a group..' id='group-name'>
+        </div>
+        <div>
+          <button class='addGroupBtn' onclick="addGroup()">Add Group!</button>
+        </div>
+      </div>
+      <div class='taskGroups'>
+        <div>
+          <button class="group-btn" onclick="showTasks('Inbox')">Inbox</button>
+        </div>
+      </div>
+    </div>
+    <div class='todo-container'>
+      <h1>Todo 2.0</h1>
+      <div class="TopBar">
+        <input type="text" id="text-box" placeholder="Add tasks.." />
+        <button id="add-btn" onclick="addTodo()">Add Todo!</button>
+      </div>
+      <div class="todo-list"></div>
+    </div>
+  </div>
+  <script src='script.js'></script>
+</body>
+
+</html>
